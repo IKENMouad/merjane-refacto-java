@@ -6,6 +6,8 @@ import java.time.LocalDate;
 
 import javax.persistence.*;
 
+import com.nimbleways.springboilerplate.enums.OrderType;
+
 @Entity
 @Getter
 @Setter
@@ -25,7 +27,7 @@ public class Product {
     private Integer available;
 
     @Column(name = "type")
-    private String type;
+    private OrderType type;
 
     @Column(name = "name")
     private String name;
